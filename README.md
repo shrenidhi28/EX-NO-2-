@@ -1,8 +1,8 @@
 ## EX. NO:2 IMPLEMENTATION OF PLAYFAIR CIPHER
 
- # Name: Shrenidhi
- # Reg No: 212223040196
- # Dept : CSE
+ ## Name: Shrenidhi
+ ## Reg No: 212223040196
+ ## Dept : CSE
 
 ## AIM: To write a C program to implement the Playfair Substitution technique.
 
