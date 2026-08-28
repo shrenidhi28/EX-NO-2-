@@ -1,6 +1,8 @@
 ## EX. NO:2 IMPLEMENTATION OF PLAYFAIR CIPHER
 
- 
+ # Name: Shrenidhi
+ # Reg No: 212223040196
+ # Dept : CSE
 
 ## AIM:
  
