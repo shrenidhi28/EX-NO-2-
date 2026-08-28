@@ -4,12 +4,7 @@
  # Reg No: 212223040196
  # Dept : CSE
 
-## AIM:
- 
-
- 
-
-To write a C program to implement the Playfair Substitution technique.
+## AIM: To write a C program to implement the Playfair Substitution technique.
 
 ## DESCRIPTION:
 
@@ -36,7 +31,7 @@ STEP-5: Display the obtained cipher text.
 
 
 
-Program:
+# Program:
 
 ```
 #include <stdio.h>
@@ -213,7 +208,11 @@ int main() {
 
 
 
-Output:
+## Output:
 
 <img width="544" height="410" alt="image" src="https://github.com/user-attachments/assets/7360ae13-58ac-4d4e-ad24-719544cd4889" />
+
+## RESULT
+
+Thus, the Playfair Cipher algorithm was successfully implemented using C language.
 
