@@ -1,39 +1,47 @@
-## EX. NO:2 IMPLEMENTATION OF PLAYFAIR CIPHER
+**EX. NO: 2: IMPLEMENTATION OF PLAYFAIR CIPHER**
 
- ## Name: Shrenidhi
- ## Reg No: 212223040196
- ## Dept : CSE
+**Name:** Shrenidhi
 
-## AIM: To write a C program to implement the Playfair Substitution technique.
+**Reg No:** 212223040196
 
-## DESCRIPTION:
+**Dept:** CSE
 
-The Playfair cipher starts with creating a key table. The key table is a 5×5 grid of letters that will act as the key for encrypting your plaintext. Each of the 25 letters must be unique and one letter of the alphabet is omitted from the table (as there are 25 spots and 26 letters in the alphabet).
+**AIM:**
 
-To encrypt a message, one would break the message into digrams (groups of 2 letters) such that, for example, "HelloWorld" becomes "HE LL OW OR LD", and map them out on the key table. The two letters of the diagram are considered as the opposite corners of a rectangle in the key table. Note the relative position of the corners of this rectangle. Then apply the following 4 rules, in order, to each pair of letters in the plaintext:
-1.	If both letters are the same (or only one letter is left), add an "X" after the first letter
-2.	If the letters appear on the same row of your table, replace them with the letters to their immediate right respectively
-3.	If the letters appear on the same column of your table, replace them with the letters immediately below respectively
-4.	If the letters are not on the same row or column, replace them with the letters on the same row respectively but at the other pair of corners of the rectangle defined by the original pair.
-## EXAMPLE:
+To write a C program to implement the Playfair Substitution technique.
+
+**DESCRIPTION:**
+
+The Playfair Cipher starts by creating a key table. The key table is a 5×5 grid of letters that acts as the key for encrypting the plaintext. Each of the 25 letters must be unique, and one letter of the alphabet is omitted from the table because there are only 25 positions.
+
+To encrypt a message, the plaintext is divided into digrams (groups of two letters). For example, **HELLOWORLD** becomes **HE LX LO WO RL DX** after handling repeated letters and padding where necessary.
+
+The following rules are applied to each pair of letters:
+
+1. If both letters are the same, insert an **X** after the first letter.
+2. If both letters appear in the same row of the table, replace them with the letters immediately to their right.
+3. If both letters appear in the same column of the table, replace them with the letters immediately below them.
+4. If the letters are in different rows and columns, replace them with the letters in the same row but at the opposite corners of the rectangle formed by the original pair.
+
+**EXAMPLE:**
+
 ![image](https://github.com/Hemamanigandan/EX-NO-2-/assets/149653568/e6858d4f-b122-42ba-acdb-db18ec2e9675)
 
- 
+**ALGORITHM:**
 
-## ALGORITHM:
+**STEP 1:** Read the plain text from the user.
 
-STEP-1: Read the plain text from the user.
-STEP-2: Read the keyword from the user.
-STEP-3: Arrange the keyword without duplicates in a 5*5 matrix in the row order and fill the remaining cells with missed out letters in alphabetical order. Note that ‘i’ and ‘j’ takes the same cell.
-STEP-4: Group the plain text in pairs and match the corresponding corner letters by forming a rectangular grid.
-STEP-5: Display the obtained cipher text.
+**STEP 2:** Read the keyword from the user.
 
+**STEP 3:** Arrange the keyword without duplicates in a 5×5 matrix in row order and fill the remaining cells with the unused letters in alphabetical order. Note that **I** and **J** occupy the same cell.
 
+**STEP 4:** Group the plain text into pairs and match the corresponding letters using the Playfair Cipher rules.
 
+**STEP 5:** Display the obtained cipher text.
 
-# Program:
+**PROGRAM:**
 
-```
+```c
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -278,7 +286,7 @@ int main()
     // Encrypt
     encrypt(plaintext);
 
-    // Copy encrypted text manually for decryption
+    // Enter ciphertext for decryption
     printf("\nEnter Cipher Text for Decryption: ");
     scanf("%s", ciphertext);
 
@@ -286,20 +294,12 @@ int main()
 
     return 0;
 }
-
-
 ```
 
-
-
-
-
-## Output:
+**OUTPUT:**
 
 <img width="509" height="438" alt="image" src="https://github.com/user-attachments/assets/6639cac3-7f56-4f73-9fa9-77e1ce8611ec" />
 
+**RESULT:**
 
-## RESULT
-
-Thus, the Playfair Cipher algorithm was successfully implemented using C language.
-
+Thus, the Playfair Cipher algorithm was successfully implemented using the C language.
